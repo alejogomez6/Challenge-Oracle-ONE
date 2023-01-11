@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-inicio">
+        <div class="header-logo">
+            <img src="assets/img/alura-logo.svg" alt="logo alura">
+        </div>
+    </header>
+    <main class="main-inicio">
+        <section class="sec-encriptador">
+            <form id="encriptador" class="textbox-encriptador">
+                <textarea id="textarea" placeholder="Ingrese texto aquí" autofocus></textarea>
+            </form>
+            <div class="footer-encriptador">
+                <div class="advertencia-encriptador">
+                    <img src="assets/img/advertencia-logo.svg" alt="simbolo de advertencia">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones-encriptador">
+                    <div class="boton-encriptar">
+                        <button id="botonEncriptar" onclick="encriptador()">
+                            Encriptar
+                        </button>
+                    </div>
+                    <div>
+                        <button id="botonDesencriptar" onclick="desencriptador()">
+                            Desencriptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="encriptadoA" class="sec-encriptado-a">
+            <div class="muñeco">
+                <img src="assets/img/muñeco.svg" alt="muñeco">
+            </div>
+            <div class="mensaje-inicio">
+                <div class="mensaje-a">
+                    <p>Ningún mensaje fue encontrado</p>
+                </div>
+                <div class="mensaje-b">
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </section>
+        <section id="encriptadoB" class="sec-encriptado-b">
+            <div class="mensaje-encriptado">
+                <p id="mensajeEncriptado"></p>
+            </div>
+            <div class="boton-copiar">
+                <button id="botonCopiar" onclick="copiar()">
+                    Copiar
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="main.js"></script>
+
+</html>

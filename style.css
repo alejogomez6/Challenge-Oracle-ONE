@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    background: #E5E5E5;
+    font-family: 'Inter';
+    margin: 0rem 4rem;
+}
+
+.xxx{
+    background-color: grey;
+    border: black solid 1px;
+}
+
+/* HEADER */
+.header-inicio{
+    position: absolute;
+}
+
+/* MAIN */
+.main-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80%;
+    width: 95%;
+    margin: 2.7rem 0rem;
+}
+
+/* ENCRIPTADOR */
+
+.sec-encriptador{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0rem 0rem 0rem 10rem;
+}
+
+.textbox-encriptador{
+    text-align: center;
+    margin-top: 5%;
+}
+
+textarea{
+    background-color: #E5E5E5;
+    border: 0px;
+    font-size: 30px;
+    width: 100%;
+    height: 70vh;
+    resize: none;
+    overflow: auto;
+    outline: none;
+    color: #0A3871;
+}
+
+textarea::placeholder{
+    color: #0A3871;
+}
+
+.footer-encriptador{
+    width: 100%;
+}
+
+.advertencia-encriptador{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    color: #8f8f8f;
+}
+
+.botones-encriptador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.advertencia-encriptador p {
+    margin-left: 0.5rem;
+}
+
+button{
+    font-size: 16px;
+    width: 100%;
+    padding: 1.2rem 10rem;
+    border-radius: 16px;
+    border: 1.5px #0A3871 solid;
+    color: #0A3871;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+button:hover{
+    background-color: #CED4DA;
+}
+
+.boton-encriptar button{
+    background-color: #0A3871;
+    color: white;
+}
+
+.boton-encriptar button:hover{
+    background-color: #072B61;
+}
+
+/* ENCRIPTADO A */
+
+.sec-encriptado-a{
+    background-color: white;
+    height: 90vh;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.muñeco {
+    align-self: center;
+}
+
+.mensaje-inicio{
+    width: 90%;
+    text-align: center;
+}
+
+.mensaje-a {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mensaje-b {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/* ENCRIPTADO B */
+
+.sec-encriptado-b{
+    background-color: white;
+    height: 90vh;
+    width: 400px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.mensaje-encriptado {
+    margin: 1rem 2rem;
+}
+
+.boton-copiar {
+    margin: 2.5rem 1rem;
+}
+
+.boton-copiar button:hover {
+    background-color: #EFF1FA;
+}
