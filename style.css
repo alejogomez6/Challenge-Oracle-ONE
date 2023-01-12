@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 
-body{
+body {
     background: #E5E5E5;
     font-family: 'Inter';
     margin: 0rem;
 }
 
-.xxx{
+.xxx {
     background-color: grey;
     border: black solid 1px;
 }
 
 /* HEADER */
-.header-inicio{
+.header-inicio {
     position: absolute;
     top: 1rem;
     left: 2rem;
 }
 
 /* MAIN */
-.main-inicio{
+.main-inicio {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -29,21 +29,21 @@ body{
 
 /* ENCRIPTADOR */
 
-.sec-encriptador{
+.sec-encriptador {
     display: flex;
     flex-direction: column;
     width: 600px;
 }
 
-.textbox-encriptador{
+.textbox-encriptador {
     text-align: center;
     margin-top: 10%;
 }
 
-textarea{
+textarea {
     background-color: #E5E5E5;
     border: 0px;
-    font-size: 3.5vh;
+    font-size: 3.4vh;
     width: 100%;
     height: 66vh;
     resize: none;
@@ -52,18 +52,18 @@ textarea{
     color: #0A3871;
 }
 
-textarea::placeholder{
+textarea::placeholder {
     color: #0A3871;
 }
 
-.advertencia-encriptador{
+.advertencia-encriptador {
     display: flex;
     flex-direction: row;
     font-size: 1.5vh;
     color: #8f8f8f;
 }
 
-.botones-encriptador{
+.botones-encriptador {
     display: flex;
     flex-direction: row;
 }
@@ -73,7 +73,7 @@ textarea::placeholder{
 }
 
 
-button{
+button {
     font-size: 1.8vh;
     margin: 0rem 1rem;
     padding: 2vh 15vh;
@@ -83,22 +83,22 @@ button{
     background-color: rgba(255, 255, 255, 0);
 }
 
-button:hover{
+button:hover {
     background-color: #CED4DA;
 }
 
-.boton-encriptar button{
+.boton-encriptar button {
     background-color: #0A3871;
     color: white;
 }
 
-.boton-encriptar button:hover{
+.boton-encriptar button:hover {
     background-color: #072B61;
 }
 
 /* ENCRIPTADO A */
 
-.sec-encriptado-a{
+.sec-encriptado-a {
     background-color: white;
     height: 90vh;
     width: 400px;
@@ -114,7 +114,7 @@ button:hover{
     align-self: center;
 }
 
-.mensaje-inicio{
+.mensaje-inicio {
     width: 90%;
     text-align: center;
 }
@@ -131,7 +131,7 @@ button:hover{
 
 /* ENCRIPTADO B */
 
-.sec-encriptado-b{
+.sec-encriptado-b {
     background-color: white;
     height: 90vh;
     width: 400px;
@@ -161,11 +161,11 @@ button:hover{
 
     /* ENCRIPTADOR */
 
-    textarea{
+    textarea {
         font-size: 3vh;
     }
 
-    button{
+    button {
         font-size: 1.7vh;
         padding: 1.5vh 13vh;
     }
@@ -176,15 +176,15 @@ button:hover{
         width: 30%;
     }
 
-    .muñeco img{
+    .muñeco img {
         width: 250px;
     }
 
-    .mensaje-a{
+    .mensaje-a {
         font-size: 2.5vh;
     }
 
-    .mensaje-b{
+    .mensaje-b {
         font-size: 1.6vh;
     }
 
@@ -209,7 +209,7 @@ button:hover{
         width: 600px;
     }
 
-    textarea{
+    textarea {
         height: 50vh;
         font-size: 3.0vh;
     }
@@ -255,7 +255,7 @@ button:hover{
         width: -webkit-fill-available;
         width: fill-available;
 
-}
+    }
 }
 
 @media screen and (max-width: 620px) {
