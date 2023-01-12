@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+
 body{
     background: #E5E5E5;
     font-family: 'Inter';
-    margin: 0rem 4rem;
+    margin: 0rem;
 }
 
 .xxx{
@@ -14,6 +15,8 @@ body{
 /* HEADER */
 .header-inicio{
     position: absolute;
+    top: 1rem;
+    left: 2rem;
 }
 
 /* MAIN */
@@ -21,9 +24,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 80%;
-    width: 95%;
-    margin: 2.7rem 0rem;
+    margin: 3rem 0rem;
 }
 
 /* ENCRIPTADOR */
@@ -31,21 +32,20 @@ body{
 .sec-encriptador{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 0rem 0rem 0rem 10rem;
+    width: 600px;
 }
 
 .textbox-encriptador{
     text-align: center;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 textarea{
     background-color: #E5E5E5;
     border: 0px;
-    font-size: 30px;
+    font-size: 3.5vh;
     width: 100%;
-    height: 70vh;
+    height: 66vh;
     resize: none;
     overflow: auto;
     outline: none;
@@ -56,31 +56,27 @@ textarea::placeholder{
     color: #0A3871;
 }
 
-.footer-encriptador{
-    width: 100%;
-}
-
 .advertencia-encriptador{
     display: flex;
     flex-direction: row;
-    font-size: 14px;
+    font-size: 1.5vh;
     color: #8f8f8f;
 }
 
 .botones-encriptador{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
-.advertencia-encriptador p {
-    margin-left: 0.5rem;
+.advertencia-encriptador img {
+    margin: 0rem 0.5rem 0rem 1rem
 }
+
 
 button{
-    font-size: 16px;
-    width: 100%;
-    padding: 1.2rem 10rem;
+    font-size: 1.8vh;
+    margin: 0rem 1rem;
+    padding: 2vh 15vh;
     border-radius: 16px;
     border: 1.5px #0A3871 solid;
     color: #0A3871;
@@ -124,12 +120,12 @@ button:hover{
 }
 
 .mensaje-a {
-    font-size: 24px;
+    font-size: 2.7vh;
     font-weight: bold;
 }
 
 .mensaje-b {
-    font-size: 16px;
+    font-size: 1.6vh;
     line-height: 150%;
 }
 
@@ -149,6 +145,8 @@ button:hover{
 
 .mensaje-encriptado {
     margin: 1rem 2rem;
+    color: #495057;
+    font-size: 1.5rem;
 }
 
 .boton-copiar {
@@ -157,4 +155,134 @@ button:hover{
 
 .boton-copiar button:hover {
     background-color: #EFF1FA;
+}
+
+@media screen and (max-width: 1320px) {
+
+    /* ENCRIPTADOR */
+
+    textarea{
+        font-size: 3vh;
+    }
+
+    button{
+        font-size: 1.7vh;
+        padding: 1.5vh 13vh;
+    }
+
+    /* ENCRIPTADO A */
+
+    .sec-encriptado-a {
+        width: 30%;
+    }
+
+    .muñeco img{
+        width: 250px;
+    }
+
+    .mensaje-a{
+        font-size: 2.5vh;
+    }
+
+    .mensaje-b{
+        font-size: 1.6vh;
+    }
+
+    /* ENCRIPTADO B */
+
+    .sec-encriptado-b {
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 1120px) {
+
+    /* ENCRIPTADOR */
+
+    .main-inicio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec-encriptador {
+        width: 600px;
+    }
+
+    textarea{
+        height: 50vh;
+        font-size: 3.0vh;
+    }
+
+    button {
+        padding: 1.5vh 10vh;
+    }
+
+    /* ENCRIPTADO A */
+
+    .sec-encriptado-a {
+        width: 90%;
+        height: auto;
+        margin: 2rem 0rem 0rem 0rem;
+    }
+
+    .mensaje-inicio {
+        margin: 1.5rem 0rem;
+    }
+
+    .muñeco {
+        display: none;
+    }
+
+    /* ENCRIPTADO B */
+
+    .sec-encriptado-b {
+        width: 90%;
+        height: auto;
+        margin: 2rem 0rem 0rem 0rem;
+        justify-content: center;
+    }
+
+    .boton-copiar {
+        margin: 1rem 0rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .boton-copiar button {
+        width: 100%;
+        width: -moz-available;
+        width: -webkit-fill-available;
+        width: fill-available;
+
+}
+}
+
+@media screen and (max-width: 620px) {
+
+    /* ENCRIPTADOR */
+
+    textarea {
+        width: fit-content;
+    }
+
+    .botones-encriptador {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 1.5vh 30vw;
+        margin: 0.5rem 0rem;
+    }
+
+    .advertencia-encriptador {
+        justify-content: center;
+    }
+
+    .sec-encriptado-a {
+        width: 95%;
+    }
 }
